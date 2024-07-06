@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css01.css">
+    <!-- this is internal css and have 2nd most priority -->
+    <style>
+        p{
+            /* this is element selector */
+            color: yellow;
+            background-color:lightblue ;
+            /* write !important to give it top most priority as stated above */
+        }
+        #redElement{
+            color:blue;
+        }
+        .bgblue{
+            background-color:black;
+        }
+        footer,span{
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <p style="color: red; background-color: pink;">this is a paragraph</p> <!-- this is inline css and have top most priority-->
+    <p>this is another paragraph</p>
+    <p id="redElement">this is yet another paragraph to demonstrate id selector</p>
+    <div >
+        <p class="bgblue">
+            another paragraph inside the div tag yet the style effects are followed.
+
+    </p>
+<span>
+    this is span to paragraph
+</span></div>
+<footer>this is footer of the page</footer>
+</body>
+</html>

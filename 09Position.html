@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box1{
+            /* position: absolute ; relative to the position of its first parent 
+            position: relative ; relative to its normal position and will leave a gap at its normal position 
+            position : fixed ; position relative to the browser window; will stay fixed no matter u scroll down or up */
+            
+            position: sticky;  /*will stick to the browser window and will move with cursor   */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

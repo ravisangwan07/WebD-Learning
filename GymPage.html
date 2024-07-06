@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness </title>
+    <link rel="stylesheet" href="css01.css">
+    <style>
+
+        body {
+            font-family: cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('https://img.freepik.com/premium-photo/contemporary-spotless-fitness-gym-center-interiorgenerative-ai_391052-10889.jpg');
+        }
+
+        .left {
+            display: inline-block;
+            border: 5px solid red;
+            position: absolute;
+            left: 20px;
+            top: 18px;
+
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+
+        }
+
+        .mid {
+            display: block;
+            border: 5px solid green;
+            width: 50%;
+            margin: 18px auto;
+
+        }
+
+        .right {
+            display: inline-block;
+            border: 5px solid yellow;
+            position: absolute;
+            right: 34px;
+            top: 18px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: cursive;
+        }
+
+        .btn:hover {
+            background-color: darkgray;
+
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 84px 120px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 30px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 280px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 4px auto;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: auto;
+            margin: auto auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- ;eft box for logo -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIVQlnf90UvouzfzkCDthPHvvh1joBq5Udn24YwBj0Zallr2QdVeEPoS8xFw&s"
+                alt="">
+            <div>Bidu Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        mai hu ek chota sa container
+        <h1>Join the best gym of India now !! </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                Name <input type="text" name="" placeholder="Enter Your Name">
+                Age <input type="number" name="" placeholder="Enter Your Age">
+                Contact No. <input type="number" name="" placeholder="Enter Your Contact No. ">
+                City <input type="text" name="" placeholder="Enter Your City Name">
+                <button clasonclick="SubmitEvent" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

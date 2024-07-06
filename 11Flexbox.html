@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            /* initalise the container as a flexbox */
+            display: flex;
+            /* flexbox properties 
+             */
+             flex-direction: row;
+            /* flex-direction: is used to give direction to boxes as row column row-reverse column-reverse; */
+            flex-wrap: wrap;
+            /* ye kaam aataa zoom out -in krte time boxes ko wrap krne ; */
+            /* flex-flow:  ye kaam aata h direction and wrap ko ek sath rkahne  mai; */
+            justify-content: space-evenly;
+            /* justify-content:  iske hote h 4 type : center, space-around ;space-between, space evenly jo ki dabbe k beech  m gap dene m kaam aave ; */
+            align-items: center;
+            
+        }
+        .item {
+            width: 200px;
+            
+            height: 24opx ;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+
+        }
+
+    </style>
+</head>
+<body>
+     <h1>this is a flexbox tutorial</h1>
+     <div class="container">
+        <div class="item" id="item1">firstboc</div>
+        <div class="item" id="item2">secondbox</div>
+        <div class="item" id="item3">thirdbox</div>
+        <div class="item" id="item4">fourthbox</div>
+        <div class="item" id="item5">fifthboc</div>
+        <div class="item" id="item6">sixthboc</div>
+     </div>
+</body>
+</html>

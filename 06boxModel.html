@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: cyan;
+            font-family: cursive;
+
+        }
+        .container{
+            background-color: burlywood;
+            border: 3px solid rgb(96, 79, 79);
+            padding: 9px;
+            /* paddiing, margin can be done from top bottom left right individually as per requiremnets */
+            /* or like this padding/margin = top right bottom left i.e. padding : 23px 56px 6px 78px;  (cloclkwise order) */
+            /* padding/margin  can be given as y or x axis like padding: y(top/bottom) x(left/right) such as padding : 34px 19px */
+            margin: 34px;
+            border-radius: 23px;
+            width: 533px;
+            box-sizing: border-box; /* size of box will not change from this */
+
+        }
+        .Bcontainer{
+            width: 900px;
+            border: 3px solid black;
+            margin: auto auto;
+            
+        }
+        .item{
+            border: 3px solid darkgrey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: lightskyblue;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+
+
+        }
+        #computer{
+            float: right ;
+            width: 48%;
+            
+
+
+        }
+        #stationary{
+            float: left;
+            width: 50%;
+            /* no float left allign will be allowed to overlap this stationary box after using clear: left; */
+
+            clear: left;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore est, error dolorum repellat omnis, excepturi enim, voluptatibus delectus quisquam aut cumque sequi doloremque accusantium et nobis! Delectus incidunt corporis animi.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="secomd"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore est, error dolorum repellat omnis, excepturi enim, voluptatibus delectus quisquam aut cumque sequi doloremque accusantium et nobis! Delectus incidunt corporis animi.</p>
+    </div>
+    <div class="Bcontainer"> 
+        <h3>this is all about allignment</h3> 
+        <div id="fruits" class="item">
+            <h3>Fruits</h3> 
+            <p id="fruitspara" class="para"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum tempora error deleniti dolorum mollitia molestiae iusto, exercitationem nihil nulla saepe ipsum accusantium, harum quae. Laboriosam suscipit harum nihil. Dignissimos, assumenda..</p>
+        </div> 
+        <div id="computers" class="item">
+            <h3>computers</h3> 
+            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates delectus rem obcaecati consequatur a pariatur alias odio amet? Quibusdam debitis inventore consectetur eveniet voluptatem dolore maxime optio accusantium? Consectetur!.</p>
+        </div>
+        <div id="fruits" class="item">
+            <h3>Stationary</h3> 
+            <p id="stationarypara" class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur modi molestiae. Enim quaerat excepturi eaque illo consequuntur deserunt autem dicta maiores sed, velit quae quisquam dolorem laborum, magnam ducimus?.</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

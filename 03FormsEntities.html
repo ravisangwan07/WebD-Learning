@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>this is HTML forms</h2>
+    <form action="backend.php">
+        <div>
+            Name : <input type="text" name="myName" >
+        </div>
+        <div>
+            Roll : <input type="number" name="myRoll" >
+        </div>
+        <div>
+            Email : <input type="email" name="myEmail" >
+        </div>
+        <div>
+            <label for="01">Are you 18+ :</label>
+            <input type="checkbox" name="myage" checked id="01" >
+        </div>
+        <div>
+            Gender :  Male <input type="radio" name="mygender" > Female  <input type="radio" name="mygender" > Others  <input type="radio" name="mygender" >
+        </div>
+        <div>
+            Write about yourself : <br> <textarea name="self"  cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="Mycars" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf" selected>Swift</option>
+        </select>
+        </div>
+        <div>
+            <input type="submit" value="submit now">
+        </div>
+        <div>
+            <input type ="reset" name="Reset now" >
+        </div>
+    </form>
+    <!-- inline and block elements-->
+    <p style ="border:2px solid red">paragraph</p>
+    <span style="border :2px solid blue">this is a paragraph</span>
+    <span>this is also a span paragraph </span>
+
+    <h2>IDs and Classes in HTML </h2>
+    <div id="mainBox" class="redBg blackborder">
+        this is mainbox
+    </div>
+    <span class="redBg"></span>
+    <!-- now to select or call out span with class redBg we can use span.redBg -->
+    <!-- dot(.) is for class and hash(#) is for id ; multiple classes can be formed too using multiple dots-->
+    <span class="redBg"></span>
+    <span id="spanbox"></span>
+    <span class="redBg blackborder anotherclass pappu"></span>
+    <!-- Emmet takes div tag as default means ki agar khali .class lgayenge to div m bnega -->
+    <div class="background"></div>
+    <!-- formed using (.background) -->
+    
+
+    <h2>HTML entities</h2>
+    <div class="container">
+        <p>this is a paragraph</p>
+    </div>
+    <div>
+        <p>this is another &nbsp;      paragraph</p>
+        <!-- nbsp;(non breaking space) is used to give extra space as html ignore multiple space and consider them as one -->
+        <p>tag bracket are inserted using &lt; and &gt; like &lt;p&gt;</p>
+        <!-- &lt; for < and &gt; for >  -->
+        <p>pound : &pound; and copyright is written as &copy; <br>empty is written like this &#160; </p>
+
+
+    </div>
+
+    <h2>Semantic tags & Elements</h2>
+    <header>this is header of my webpage</header>
+    <footer>this is footer of webpage</footer>
+    <details><summary>
+        this is summary 
+    </summary> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetur doloribus, id eveniet facere rem ad sequi dignissimos porro quos at sapiente provident tempora quaerat, vitae repudiandae, beatae soluta expedita!
+    Obcaecati praesentium labore cumque laborum adipisci quia mollitia dolorem fugit, quidem commodi magni? Nesciunt debitis dolorum tempora aut dolore veritatis vel, molestiae nam minus iure quisquam, corrupti laborum officiis dicta!
+    Qui eligendi impedit nam placeat illum esse odit modi nesciunt doloremque facere. Sit, vitae facilis. Vitae vel sed odio quae quod ut doloremque ad deserunt optio sint, dolorem corporis ea.
+    Obcaecati sapiente ducimus totam culpa odio repudiandae reprehenderit accusantium unde dolorum modi iusto temporibus consectetur dicta adipisci laborum iure eius quae voluptatum, id suscipit ut quos maxime nemo. Dolore, possimus.
+    Rem itaque unde dolore maiores dolor minima libero nobis placeat qui, iusto inventore, atque repellat nemo mollitia beatae ipsam nesciunt illum eum similique? Numquam laboriosam delectus consectetur accusantium, non et!</details>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables and lists</title>
+    <style>
+        table, th, td {
+           border: 1px solid black;
+        }
+     </style>
+</head>
+
+<body>
+    <ul type="circle"> <!-- disc ,square,circle-->
+        <li>first item</li>
+        <ul>
+            <li>nested</li>
+            <li>list</li>
+        </ul>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+    <ol type="i"><!-- 1,A,a,I,i -->
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
+
+
+    <!-- tables -->
+    <h3>HTML tables</h3>
+    <table style="width:300px;"  >
+        <caption>this is caption of table</caption>        
+        <thead padding: 15px;>
+            <tr>
+                <th>Name</th>
+                <!--rowspan="2" or colspan="2"-->
+                <th>Roll No</th>
+                <th>Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ravi sangwan</td>
+                <td>20001016049</td>
+                <td>ceds</td>
+            </tr>
+            <tr>
+                <td>rohan rajput</td>
+                <td>20001016054</td>
+                <td>IT</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
