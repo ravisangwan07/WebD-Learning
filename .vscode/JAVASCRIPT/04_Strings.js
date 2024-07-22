@@ -30,3 +30,4 @@ console.log(extraspacename.trim()); // it will return the string without extra s
 const websiteaddress = "https://www.google.com/ravi%20sangwan";
 console.log(websiteaddress.replace('%20','-')); // it will replace the first occurance of the character
 console.log(websiteaddress.includes('ravi')); // it will return true if the character is present in the string
+//published to github

@@ -31,3 +31,5 @@ const obj2 = {
 
 const obj3 = Object.assign(obj1, obj2);
 console.log(obj3); // this will give answer as a single object with all the keys and values of obj1 and obj2
+
+//published to github

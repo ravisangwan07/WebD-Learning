@@ -58,3 +58,6 @@ let score1 = 10;
 let score2 = 20;
 let score3 = 30;
 console.log(Array.of(score1, score2, score3)); // this will return the array of the elements
+
+
+//published to github

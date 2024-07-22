@@ -29,3 +29,4 @@ const min = 10
 const max = 50
 
 console.log(Math.floor(Math.random()*(max-min+1))+min) // it will return a random number between 10 and 50
+//published to github

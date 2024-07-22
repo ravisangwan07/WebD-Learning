@@ -29,3 +29,5 @@ const jsuser = { // it design key values pairs and key is taken as string
      console.log('Hello, I am ' + this.name);
  } // to add a method in object
  console.log(jsuser.greeting());
+
+ //published to github

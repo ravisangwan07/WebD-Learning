@@ -25,3 +25,4 @@ console.log(Math.floor(mycreatedate.getTime() / (1000)));// this will return the
 console.log(mycreatedate.toLocaleString('default', { weekday: 'long' }));
 
 
+//published to github

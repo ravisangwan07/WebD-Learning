@@ -12,3 +12,5 @@ let accountState // if the value is not defined or declared, it will show undefi
 Email = "sangwanbidu@papa.com" // can be changed as it is a variable
 console.log(Email);
 console.table([accountId,Email, Password, accountCity, accountState])
+
+//published to github
