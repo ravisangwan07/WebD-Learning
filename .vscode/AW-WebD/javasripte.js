@@ -1,3 +1,0 @@
-document.getElementsByTagName("h1"){
-   
-}
