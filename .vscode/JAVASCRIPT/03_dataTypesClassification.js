@@ -28,7 +28,7 @@ const heroes = ["shaktiman", "superman" ,"batman"];
 let myobj = {
     name: "ravi",
     age: 23,
-    city: "bhiwnai"
+    city: "bhiwani"
 }
 
 const myFunction = function(){
