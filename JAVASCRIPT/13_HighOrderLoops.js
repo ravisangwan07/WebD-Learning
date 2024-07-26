@@ -61,6 +61,18 @@ const myobject = {
 }
 
 for (const key in myobject) {
-    console.log(myobject[key]); // this is for in loop
+   // console.log(myobject[key]); // this is for in loop
 }
 //using for in loop in object gives key values but using for in loop in array gives index values
+// also maps can not be iterated using for in loop
+
+
+const coding = ['Javascript', 'Python', 'Ruby', 'C++', 'Java', 'Swift'];
+
+coding.forEach(function (item){
+    console.log(item);
+})
+//using arrow function
+coding.forEach((item) => {
+    console.log(item);
+}) 
