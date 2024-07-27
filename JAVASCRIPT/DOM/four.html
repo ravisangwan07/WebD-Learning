@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Final : Code with chai</title>
+</head>
+<body style="background-color: #121212; color : #fff ">
+    <ul class="language">
+        <li>HTML</li>
+        <li>CSS </li>
+        
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const createLI = document.createElement('li')
+        createLI.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(createLI);
+        
+    }
+    addLanguage('NodeJS');
+    addLanguage('Python');
+
+    function OptimisedLangAdd(langname){
+        const langid = document.createElement('li');
+        langid.appendChild(document.createTextNode(langname));
+        document.querySelector('.language').appendChild(langid);
+        
+    }
+    OptimisedLangAdd('Java');
+    OptimisedLangAdd('C++');
+
+    //editing
+
+    const secondLang = document.querySelector("li:nth-child(2)");
+    //secondLang.innerHTML = 'JavaScript';
+    const newLi = document.createElement('li');
+    newLi.textContent = 'JavaScript';
+    secondLang.replaceWith(newLi);
+
+    //edit
+    const firstlang = document.querySelector('li:first-child');
+    firstlang.outerHTML = '<li>React</li>';
+
+
+    //remove
+    const lastlang = document.querySelector('li:last-child');
+    lastlang.remove();
+    
+
+
+</script>
+</html>
